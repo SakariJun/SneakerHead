@@ -36,12 +36,12 @@
 <%
 String component = request.getAttribute("component").toString();
 %>
-<body>
+<body class="d-flex flex-column">
 	<div class="se-pre-con"></div>
 	<jsp:include page='../header.jsp'>
 		<jsp:param name="page" value="index" />
 	</jsp:include>
-	<div class="container content-page mb-5">
+	<div class="flex-grow-1 container content-page mb-5">
 		<h3 id="title" class="text-center">${title }</h3>
 		<div class="d-flex justify-content-center pt-3 pb-4">
 			<a href="<%=request.getContextPath()%>/Admin/products"
